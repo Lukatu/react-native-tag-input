@@ -101,25 +101,6 @@ type State = {
 
 class TagInput<T> extends React.PureComponent<Props<T>, State> {
 
-//   static propTypes = {
-//     value: PropTypes.array.isRequired,
-//     onChange: PropTypes.func.isRequired,
-//     labelExtractor: PropTypes.func.isRequired,
-//     text: PropTypes.string.isRequired,
-//     onChangeText: PropTypes.func.isRequired,
-//     tagColor: PropTypes.string,
-//     tagTextColor: PropTypes.string,
-//     tagContainerStyle: ViewPropTypes.style,
-//     tagTextStyle: Text.propTypes.style,
-//     inputDefaultWidth: PropTypes.number,
-//     inputColor: PropTypes.string,
-//     // $FlowFixMe(>=0.49.0): https://github.com/facebook/react-native/pull/16437
-//     inputProps: PropTypes.shape(TextInput.propTypes),
-//     maxHeight: PropTypes.number,
-//     onHeightChange: PropTypes.func,
-//     // $FlowFixMe: identify EdgeInsetsPropType, PointPropType as React PropType
-//     scrollViewProps: PropTypes.shape(ScrollView.propTypes),
-//   };
   props: Props<T>;
   state: State;
   wrapperWidth = windowWidth;
@@ -361,17 +342,6 @@ type TagProps = {
 class Tag extends React.PureComponent<TagProps> {
 
   props: TagProps;
-  static propTypes = {
-    index: PropTypes.number.isRequired,
-    label: PropTypes.string.isRequired,
-    isLastTag: PropTypes.bool.isRequired,
-    onLayoutLastTag: PropTypes.func.isRequired,
-    removeIndex: PropTypes.func.isRequired,
-    tagColor: PropTypes.string.isRequired,
-    tagTextColor: PropTypes.string.isRequired,
-    tagContainerStyle: ViewPropTypes.style,
-    tagTextStyle: Text.propTypes.style,
-  };
   curPos: ?number = null;
 
   componentWillReceiveProps(nextProps: TagProps) {
