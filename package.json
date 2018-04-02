@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "invariant": "^2.2.2",
-    "prop-types": "^15.5.10"
+    "prop-types": "15.6.1"
   },
   "peerDependencies": {
     "react": "*",
@@ -33,6 +33,6 @@
   "devDependencies": {
     "react": "15.4.1",
     "react-native": "0.42.3",
-    "flow-bin": "^0.63.0"
+    "flow-bin": "^0.56.0"
   }
 }
